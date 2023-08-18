@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Roboto:wght@300;400;700&display=swap");
+body {
+  color: #3f3f3f;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #e0e0e0;
+}
+
+main {
+  margin: 50px 100px 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 100px 0;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #e0e0e0;
+}
+
+.navbar {
+  flex-grow: 4;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid white;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-title {
+  flex-grow: 1;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-button {
+  border: 1px solid #3f3f3f;
+  border-radius: 50px;
+  padding: 10px 40px;
+}
+
+.divider {
+  display: block;
+  border-color: #e0e0e0;
+}
+
+.nav-button-container {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  height: 300px;
+  padding: 10px;
+}
+.card-img img {
+  width: 100%;
+}
+
+.kitchen-section {
+  margin-top: 50px;
+  background-color: #fcf2db;
+  padding: 0 100px 0;
+}
+
+.kitchen-title {
+  padding-top: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Roboto:wght@300;400;700&display=swap");
+// Variables
+$color-texto: #3f3f3f;
+$gris: #e0e0e0;
+
+@mixin centrar($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+body {
+  color: $color-texto;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: $gris;
+  }
+}
+main {
+  margin: 50px 100px 0;
+}
+.nav-container {
+  @include centrar;
+  margin: 20px 100px 0;
+  padding-bottom: 10px;
+  border-bottom: 3px solid $gris;
+}
+.navbar {
+  flex-grow: 4;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid white;
+  ul {
+    @include centrar(space-between, center);
+    list-style: none;
+    padding: 0;
+  }
+}
+.nav-title {
+  flex-grow: 1;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.nav-button {
+  border: 1px solid $color-texto;
+  border-radius: 50px;
+  padding: 10px 40px;
+}
+
+.divider {
+  display: block;
+  border-color: $gris;
+}
+.nav-button-container {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.images-container {
+  @include centrar;
+}
+.card-img {
+  img {
+    width: 100%;
+  }
+  @include centrar;
+  width: 300px;
+  border: 1px solid $gris;
+  border-radius: 10px;
+  height: 300px;
+  padding: 10px;
+}
+.kitchen-section {
+  margin-top: 50px;
+  background-color: #fcf2db;
+  padding: 0 100px 0;
+}
+.kitchen-title {
+  padding-top: 30px;
+}
